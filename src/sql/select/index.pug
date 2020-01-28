@@ -1,0 +1,17 @@
+extends ../../_component/layout/template
+
+block cool-config
+    -
+        var myTitle = 'Learn SQL for beginners';
+        var myDescription = 'SQL is a database';
+        var landingPage = 'SQL';
+        var activeLink = '/sql/select';
+        
+    
+block awesome-content
+    h1=myTitle
+    p=myDescription
+    h2 The SQL SELECT Statement
+    p The SELECT statement is used to select data from a database.
+    p The data returned is stored in a result table, called the result-set.
+    

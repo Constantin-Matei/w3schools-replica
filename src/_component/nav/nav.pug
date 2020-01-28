@@ -1,0 +1,83 @@
+-
+    var sideNavigationList = {
+        'Home': {
+            title: 'HTML and CSS',
+            linkList: [
+                {label: 'Learn HTML', link: '/html'},
+                {label: 'Learn CSS', link: '/css'},
+                {label: 'Learn JavaScript', link: '/javascript'},
+                {label: 'Learn SQL', link: '/sql'},
+                {label: 'Learn Python', link: '/python'},
+                {label: 'Learn Bootstrap', link: '/bootstrap'},
+                ]
+        },
+        'HTML': {
+            title: 'HTML Tutorial',
+            linkList: [
+                {label: 'HTML Elements', link: '/html/elements'},
+                {label: 'HTML Attributes', link: '/html/attributes'},
+                {label: 'HTML Headings', link: '/html/headings'},
+            ]
+        },
+        'CSS': {
+            title: 'CSS Tutorial',
+            linkList: [
+                {label: 'CSS Colors', link: '/css/colors'},
+                {label: 'CSS Backgrounds', link: '/css/backgrounds'},
+                {label: 'CSS Borders', link: '/css/borders'},
+                ]
+        },
+        'JavaScript': {
+            title: 'JavaScript Tutorial',
+            linkList: [
+                {label: 'JavaScript Comments', link: '/javascript/comments'},
+                {label: 'JavaScript Variables', link: '/javascript/variables'},
+                {label: 'JavaScript Operators', link: '/javascript/operators'},
+                ]
+        },
+        'SQL': {
+            title: 'SQL Tutorial',
+            linkList: [
+                {label: 'SQL Syntax', link: '/sql/syntax'},
+                {label: 'SQL SELECT Statement', link: '/sql/select'},
+                {label: 'SQL Wildcards', link: '/sql/wildcards'},
+                ]
+        },
+        'Python': {
+            title: 'Python Tutorial',
+            linkList: [
+                {label: 'Python Data Types', link: '/python/datatypes'},
+                {label: 'Python Numbers', link: '/python/numbers'},
+                {label: 'Python Booleans', link: '/python/booleans'},
+                ]
+        },
+        'Bootstrap': {
+            title: 'Bootstrap Tutorial',
+            linkList: [
+                {label: 'Bootstrap 3 vs. Bootstrap 4', link: '/bootstrap/versions'},
+                {label: 'Bootstrap 4 Tables', link: '/bootstrap/tables'},
+                {label: 'Bootstrap 4 Jumbotron', link: '/bootstrap/jumbotron'},
+                ]
+        },
+    };
+nav
+    h3=sideNavigationList[landingPage].title
+    each navigation in sideNavigationList[landingPage].linkList
+        if navigation.link == activeLink
+            a.current(href=navigation.link)=navigation.label
+        else 
+            a(href=navigation.link)=navigation.label
+    //- a(href="/html") Learn HTML
+    //- a(href="/CSS") Learn CSS
+    //- a(href="/javascript") Learn JavaScript
+    //- a(href="/sql") Learn SQL
+    //- a(href="/python") Learn Python
+    //- a(href="/bootstrap") Learn Bootstrap
+
+//- nav
+//-     h3=sideNavigationList[landingPage].title
+//-     each navigation in sideNavigationList[landingPage].linkList
+//-         if navigation.link == activeLink
+//-             a.current(href=`${baseUrl}${navigation.link}`)=navigation.label
+//-         else
+//-             a(href=`${baseUrl}${navigation.link}`)=navigation.label

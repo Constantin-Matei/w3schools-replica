@@ -1,0 +1,24 @@
+extends ../../_component/layout/template
+
+block cool-config
+    -
+        var myTitle = 'Learn Python Data Types';
+        var myDescription = 'Python is very easy to learn';
+        var landingPage = 'Python';
+        var activeLink = '/python/datatypes';
+        
+    
+block awesome-content
+    h1=myTitle
+    p=myDescription
+    h2 Python Data Types
+    p In programming, data type is an important concept.
+    p Variables can store data of different types, and different types can do different things.
+    p Python has the following data types built-in by default, in these categories:
+    p Text Type:	str
+    p Numeric Types:	int, float, complex
+    p Sequence Types:	list, tuple, range
+    p Mapping Type:	dict
+    p Set Types:	set, frozenset
+    p Boolean Type:	bool
+    p Binary Types:	bytes, bytearray, memoryview

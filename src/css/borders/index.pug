@@ -1,0 +1,41 @@
+extends ../../_component/layout/template
+
+block cool-config
+    -
+        var myTitle = 'CSS Borders for beginners'
+        var myDescription = 'The CSS border properties allow you to specify the style, width, and color of an elements border.'
+        var landingPage = 'CSS';
+        var activeLink = '/css/borders';
+        
+    
+block awesome-content
+    h1=myTitle
+    p=myDescription
+    h2 CSS Border Style
+
+    p The following values are allowed:
+    p - dotted - Defines a dotted border
+    p - dashed - Defines a dashed border
+    p - solid - Defines a solid border
+    p - double - Defines a double border
+    p - groove - Defines a 3D grooved border. The effect depends on the border-color value
+    p - ridge - Defines a 3D ridged border. The effect depends on the border-color value
+    p - inset - Defines a 3D inset border. The effect depends on the border-color value
+    p - outset - Defines a 3D outset border. The effect depends on the border-color value
+    p - none - Defines no border
+    p - hidden - Defines a hidden border
+    p -The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).
+    h2 CSS Border Width
+    p The border-width property specifies the width of the four borders.
+    p The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick.
+    p The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border).
+    h2 CSS Border Color
+    p The border-color property is used to set the color of the four borders.
+    p The color can be set by:
+    p - name - specify a color name, like "red"
+    p - Hex - specify a hex value, like "#ff0000"
+    p - RGB - specify a RGB value, like "rgb(255,0,0)"
+    p - transparent
+    p The border-color property can have from one to four values (for the top border, right border, bottom border, and the left border). If border-color is not set, it inherits the color of the element.
+    h2 CSS Border - Individual Sides
+    p From the examples above you have seen that it is possible to specify a different border for each side. In CSS, there are also properties for specifying each of the borders (top, right, bottom, and left)

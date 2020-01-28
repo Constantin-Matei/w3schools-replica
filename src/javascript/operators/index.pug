@@ -1,0 +1,41 @@
+extends ../../_component/layout/template
+
+block cool-config
+    -
+        var myTitle = 'Learn to code JavaScript Operators';
+        var myDescription = 'Operators are very important in JavaScript';
+        var landingPage = 'JavaScript';
+        var activeLink = '/javascript/operators';
+        
+    
+block awesome-content
+    h1=myTitle
+    p=myDescription
+    h2 JavaScript Arithmetic Operators
+    p Arithmetic operators are used to perform arithmetic on numbers:
+    table(style='width:90%', border='2')
+        h3 Operator Description
+        tr
+            td +
+            td Addition
+        tr
+            td -
+            td Subtraction
+        tr
+            td *
+            td Multiplication
+        tr
+            td **
+            td Exponentiation (ES2016)
+        tr
+            td /
+            td Division
+        tr
+            td %
+            td Modulus (Division. Remainder)
+        tr
+            td ++
+            td Increment
+        tr
+            td --
+            td Decrement

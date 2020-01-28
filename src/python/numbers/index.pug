@@ -1,0 +1,18 @@
+extends ../../_component/layout/template
+
+block cool-config
+    -
+        var myTitle = 'Learn Python Numbers';
+        var myDescription = 'Python is very easy to learn';
+        var landingPage = 'Python';
+        var activeLink = '/python/numbers';
+        
+    
+block awesome-content
+    h1=myTitle
+    p=myDescription
+    h2 Python Numbers
+    p There are three numeric types in Python:
+    p int x = 1    # int
+    p float y = 2.8  # float
+    p complex z = 1j   # complex

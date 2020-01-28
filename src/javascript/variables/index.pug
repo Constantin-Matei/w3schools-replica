@@ -1,0 +1,17 @@
+extends ../../_component/layout/template
+
+block cool-config
+    -
+        var myTitle = 'Learn JavaScript Variables';
+        var myDescription = 'JavaScript variables are containers for storing data value';
+        var landingPage = 'JavaScript';
+        var activeLink = '/javascript/variables';
+        
+    
+block awesome-content
+    h1=myTitle
+    p=myDescription
+    h2 JavaScript Variables
+    p JavaScript variables are containers for storing data values.
+    p var x = 5; var y = 6; var z = x + y;
+    p From the example above, you can expect: x stores the value 5, y stores the value 6, z stores the value 11

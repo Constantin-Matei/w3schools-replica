@@ -1,0 +1,33 @@
+extends ../../_component/layout/template
+
+block cool-config
+    -
+        var myTitle = 'CSS Backgrounds for beginners'
+        var myDescription = 'CSS Backgrounds is awesome, powerful easy and fun to learn!'
+        var landingPage = 'CSS';
+        var activeLink = '/css/backgrounds';
+        
+    
+block awesome-content
+    h1=myTitle
+    p=myDescription
+    h2 CSS Tutorial
+
+    p The CSS background properties are used to define the background effects for elements.
+    p CSS background properties:
+    p background-color
+    p background-image
+    p background-repeat
+    p background-attachment
+    p background-position
+    h2 CSS background-color
+    p The background-color property specifies the background color of an element.
+    p Example:
+    p body {
+    p      background-color: lightblue;
+    p }
+    h2 CSS background-image
+    p The background-image property specifies an image to use as the background of an element.
+    p By default, the image is repeated so it covers the entire element.
+    h2 CSS background-repeat
+    p By default, the background-image property repeats an image both horizontally and vertically. Some images should be repeated only horizontally or vertically, or they will look strange.
